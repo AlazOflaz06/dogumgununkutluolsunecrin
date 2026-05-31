@@ -478,10 +478,9 @@
                 <i class="fa-solid fa-music"></i>
             </div>
             <span style="font-size: 0.85rem; font-weight: 600; color: #fff;" id="track-status">Müziği Başlat</span>
-            <audio id="bg-audio" loop>
-                <source src="https://youtu.be/IMtq785QSB8?si=DT67b-PvngIMKm_9" type="audio/mpeg">
-            </audio>
         </div>
+
+        <div id="youtube-player" style="position: absolute; width: 0; height: 0; border: 0; visibility: hidden;"></div>
 
         <section class="hero">
             <h1>İyi Ki Doğdun Ecrin! 🎉</h1>
@@ -593,6 +592,29 @@
     </div>
 
     <script>
+        // YouTube Iframe API Yükleme
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube-player', {
+                height: '0',
+                width: '0',
+                videoId: 'IMtq785QSB8',
+                playerVars: {
+                    'autoplay': 0,
+                    'loop': 1,
+                    'playlist': 'IMtq785QSB8',
+                    'controls': 0,
+                    'showinfo': 0,
+                    'rel': 0
+                }
+            });
+        }
+
         // Şifre Kontrolü
         function checkPassword() {
             const passwordInput = document.getElementById('password-input').value;
@@ -617,23 +639,21 @@
         }
 
         // Müzik İşlemleri
-        const audio = document.getElementById('bg-audio');
         const disc = document.getElementById('music-disc');
         const trackStatus = document.getElementById('track-status');
         let isPlaying = false;
 
         function toggleMusic() {
+            if (!player || typeof player.playVideo !== 'function') return;
+
             if (isPlaying) {
-                audio.pause();
+                player.pauseVideo();
                 disc.style.animationPlayState = 'paused';
                 trackStatus.innerText = "Müziği Başlat";
             } else {
-                audio.play().then(() => {
-                    disc.style.animationPlayState = 'running';
-                    trackStatus.innerText = "Ecrin Şarkısı Çalıyor 🎵";
-                }).catch(err => {
-                    console.log("Etkileşim gerekiyor.");
-                });
+                player.playVideo();
+                disc.style.animationPlayState = 'running';
+                trackStatus.innerText = "Ecrin Şarkısı Çalıyor 🎵";
             }
             isPlaying = !isPlaying;
         }

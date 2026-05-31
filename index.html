@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İyi Ki Doğdun Ecrin! ✨</title>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -289,7 +287,7 @@
         .gallery-img-wrapper {
             width: 100%;
             height: 320px;
-            background: #222; /* Fotoğraflar yüklenene kadar gri alan */
+            background: #222;
             position: relative;
             display: flex;
             align-items: center;
@@ -446,7 +444,6 @@
             .letter-body { font-size: 0.95rem; line-height: 1.6; }
         }
 
-        /* Konfeti Dünyası efekti için dinamik class */
         .confetti {
             position: fixed;
             width: 10px; height: 10px;
@@ -460,11 +457,10 @@
 </head>
 <body>
 
-    <!-- 1. GİRİŞ VE ŞİFRE EKRANI -->
     <div id="login-screen">
         <div class="login-card">
             <h2>Giriş Paneli ✨</h2>
-            <p>Sadece Ecrin ve ona değer verenler girebilir. Lütfen giriş şifresini yazın.</p>
+            <p>Sadece Ecrin girebilir. Lütfen giriş şifresini yazın.</p>
             <div class="input-box">
                 <input type="password" id="password-input" placeholder="Şifreyi giriniz...">
                 <p class="error-msg" id="error-text">İpucu: Adını küçük harflerle yazmayı dene! 😉</p>
@@ -473,32 +469,26 @@
         </div>
     </div>
 
-    <!-- 2. ANA SİTE İÇERİĞİ -->
     <div id="main-content">
         
-        <!-- Arka Plan Efektleri İçin -->
         <div id="particles-js"></div>
 
-        <!-- Müzik Çalar -->
-        <!-- NOT: 'Muzik_Linki_Buraya' kısmına kendi şarkı linkini (örn: dropbox veya telifsiz müzik linki) ekleyebilirsin -->
         <div class="music-player" onclick="toggleMusic()">
             <div class="disc" id="music-disc">
                 <i class="fa-solid fa-music"></i>
             </div>
             <span style="font-size: 0.85rem; font-weight: 600; color: #fff;" id="track-status">Müziği Başlat</span>
             <audio id="bg-audio" loop>
-                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
             </audio>
         </div>
 
-        <!-- HERO SEKTÖRÜ -->
         <section class="hero">
             <h1>İyi Ki Doğdun Ecrin! 🎉</h1>
-            <p>Bugün senin günün. Hayatımıza kattığın tüm güzellikler için teşekkür ederiz. Yeni yaşın sana mutluluk getirsin!</p>
+            <p>Bugün senin günün. Hayatıma kattığın tüm güzellikler için teşekkür ederim. Yeni yaşın sana mutluluk getirsin canımın içi iyiki varsın.</p>
             <i class="fa-solid fa-chevron-down scroll-down"></i>
         </section>
 
-        <!-- GERI SAYIM VE ZAMAN SEKTÖRÜ -->
         <section>
             <h2 class="section-title">Yeni Yaş Sayacı</h2>
             <div class="countdown-container">
@@ -521,12 +511,9 @@
             </div>
         </section>
 
-        <!-- PREMIUM FOTOĞRAF GALERİSİ -->
-        <!-- img etiketlerinin 'src' kısımlarına fotoğrafların linklerini yerleştirebilirsin -->
         <section>
-            <h2 class="section-title">En Güzel Anılar 📸</h2>
+            <h2 class="section-title">En Güzel Sanat Eserinin Sergi Salonu📸</h2>
             <div class="gallery-grid">
-                <!-- Kart 1 -->
                 <div class="gallery-card">
                     <div class="gallery-img-wrapper">
                         <i class="fa-regular fa-image"></i>
@@ -537,7 +524,6 @@
                         <p>Yüzündeki o muhteşem gülümsemenin hiç solmaması dileğiyle...</p>
                     </div>
                 </div>
-                <!-- Kart 2 -->
                 <div class="gallery-card">
                     <div class="gallery-img-wrapper">
                         <i class="fa-regular fa-image"></i>
@@ -548,7 +534,6 @@
                         <p>Çevrene her zaman neşe ve enerji saçıyorsun.</p>
                     </div>
                 </div>
-                <!-- Kart 3 -->
                 <div class="gallery-card">
                     <div class="gallery-img-wrapper">
                         <i class="fa-regular fa-image"></i>
@@ -562,65 +547,59 @@
             </div>
         </section>
 
-        <!-- ETKİLEŞİMLİ ZAMAN ÇİZGİSİ -->
         <section>
-            <h2 class="section-title">Senin Hakkında Bilinen 3 Harika Şey</h2>
+            <h2 class="section-title">Benim İçin Özel Olmanın Sebepleri</h2>
             <div class="memory-timeline">
                 <div class="timeline-item">
-                    <h4>🌟 Benzersiz Enerjin</h4>
-                    <p>Girdiğin her ortama pozitif enerji katıyorsun, seninle zaman geçirmek her zaman çok keyifli.</p>
+                    <h4>🌟 Beni Hayata Döndürdün</h4>
+                    <p>Ben asosyal biriydim dışa kapanık biriydim asla kimseyle konuşamazdım beni sen düzelttin senin sayende ben yeniden doğmuş gibi oldum bana hayatı sevdirdin keşke ölsemde kurtulsam şu hayattan diyordum daha sonra senle tanıştım hayatıma renk geldi :)</p>
                 </div>
                 <div class="timeline-item">
                     <h4> 🤗 Güvenilir Dostluğun</h4>
-                    <p>Daima sevdiklerinin yanında olan, candan ve samimi karakterinle çok özelsin.</p>
+                    <p>Daima yanımda oldun iyi günümdede kötü günümdede beni hep destekledin her zaman yanımdaydın seni çok seviyorum benim için çok özelsin.</p>
                 </div>
                 <div class="timeline-item">
-                    <h4>🎯 Güçlü Duruşun</h4>
-                    <p>İnandığın şeylerin peşinden gitme azmin ve kararlılığın her zaman takdire şayan.</p>
+                    <h4>🎯 Hiç Kötü Biri Olmadın</h4>
+                    <p>Asla bir ihanetini görmedim her zaman destek oldun bana güvendin sırrını açtın elimden geldiği kadar destek olmaya çalıştım umarım olabilmişimdir</p>
                 </div>
             </div>
         </section>
 
-        <!-- GİZLİ MEKTUP BÖLÜMÜ -->
         <section>
             <h2 class="section-title">Sana Özel Bir Not ✉️</h2>
             <div class="letter-container">
                 <div class="letter-wrapper">
                     <h3 class="letter-header">Sevgili Ecrin,</h3>
                     <p class="letter-body">
-                        Zaman ne kadar hızlı geçiyor olursa olsun, hayatımızda bıraktığın izler her zaman çok değerli. Bu site, senin ne kadar özel ve sevilen bir insan olduğunu küçük bir şekilde sana hatırlatmak için tasarlandı. 
+                        Zaman ne kadar hızlı geçiyor 6 senedir dünyamı renklendiriyorsun, hayatımda bıraktığın izler her zaman çok değerli. Bu site, senin ne kadar özel ve sevilen bir insan olduğunu küçük bir şekilde sana hatırlatmak için tasarlandı. 
                         
-                        Yeni yaşında karşına çıkacak tüm zorlukları kolayca aşmanı, her sabah yeni bir mutluluğa uyanmanı ve kalbinden geçen tüm o güzel duaların gerçeğe dönüşmesini diliyorum. 
+                        Yeni yaşında karşına çıkacak tüm zorlukları kolayca aşmanı, her sabah yeni bir mutluluğa uyanmanı ve kalbinden geçen tüm o güzel duaların gerçeğe dönüşmesini diliyorum. ve birde beni bırakmamanı diliyorum biliyorsun tek sığınacağım kişi sensin.
                         
-                        İyi ki varsın, iyi ki doğdun ve iyi ki hayatımızdasın! Doğum günün kutlu olsun.
+                        İyi ki varsın, iyi ki doğdun ve iyi ki hayatımdasın! Doğum günün kutlu olsun.
                     </p>
                     <div class="letter-footer">Sevgilerle... ✨</div>
                 </div>
             </div>
         </section>
 
-        <!-- SÜPRİZ BUTONU SEKTÖRÜ (KONFETİ PATLAMASI) -->
         <section class="surprise-zone">
             <button class="surprise-btn" onclick="triggerSurprise()">Buna Tıkla! 🎆</button>
         </section>
 
-        <!-- FOOTER -->
         <footer>
-            <p>Ecrin için Özel Olarak Tasarlandı • 2026</p>
+            <p>Ecrin için Özel Olarak Alaz Oflaz Tasarladı • 2026</p>
         </footer>
 
     </div>
 
-    <!-- SCRIPT KODLARI (İŞLEVSELLİK & EFEKTLER) -->
     <script>
-        // Şifre Kontrol Fonksiyonu
+        // Şifre Kontrolü
         function checkPassword() {
             const passwordInput = document.getElementById('password-input').value;
             const errorText = document.getElementById('error-text');
             const loginScreen = document.getElementById('login-screen');
             const mainContent = document.getElementById('main-content');
 
-            // Şifre: ecrin
             if (passwordInput.toLowerCase() === 'ecrin') {
                 loginScreen.style.transform = 'translateY(-100%)';
                 setTimeout(() => {
@@ -629,18 +608,15 @@
                     setTimeout(() => {
                         mainContent.style.opacity = '1';
                     }, 50);
-                    // Giriş yapınca otomatik müzik çalmayı dene
                     toggleMusic();
-                    // İlk girişte otomatik konfeti yağmuru
                     setInterval(createConfetti, 150);
                 }, 800);
             } else {
                 errorText.style.display = 'block';
-                errorText.style.animation = 'shake 0.3s ease';
             }
         }
 
-        // Müzik Çalar Fonksiyonu
+        // Müzik İşlemleri
         const audio = document.getElementById('bg-audio');
         const disc = document.getElementById('music-disc');
         const trackStatus = document.getElementById('track-status');
@@ -654,26 +630,22 @@
             } else {
                 audio.play().then(() => {
                     disc.style.animationPlayState = 'running';
-                    trackStatus.innerText = "Şarkı Çalıyor 🎵";
+                    trackStatus.innerText = "Ecrin Şarkısı Çalıyor 🎵";
                 }).catch(err => {
-                    console.log("Kullanıcı etkileşimi gerekiyor.");
+                    console.log("Etkileşim gerekiyor.");
                 });
             }
             isPlaying = !isPlaying;
         }
 
-        // Geri Sayım Sayacı (Hedef Tarih Ayarla)
-        // Buradaki tarihi Ecrin'in tam doğum gününe göre güncelleyebilirsin (Yıl, Ay-1, Gün)
-        const targetDate = new Date("Feb 21, 2027 00:00:00").getTime();
+        // TAM 02 HAZİRAN 2026 GERİ SAYIM HEDEFİ
+        const targetDate = new Date("Jun 2, 2026 00:00:00").getTime();
 
         function updateCountdown() {
             const now = new Date().getTime();
             let gap = targetDate - now;
 
-            // Eğer doğum günü geçtiyse sayacı sıfırla veya bir sonraki yıla kur
-            if (gap < 0) {
-                gap = 0; 
-            }
+            if (gap < 0) { gap = 0; }
 
             const second = 1000;
             const minute = second * 60;
@@ -696,42 +668,26 @@
         function createConfetti() {
             const confetti = document.createElement('div');
             confetti.classList.add('confetti');
-            
-            // Rastgele renkler
-            const colors = ['#ff758f', '#ff4d6d', '#7209b7', '#f72585', '#4cc9f0', '#ffccd5'];
+            const colors = ['#ff758f', '#ff4d6d', '#7209b7', '#f72585', '#4cc9f0'];
             confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
-            
-            // Rastgele konum ve boyutlar
             confetti.style.left = Math.random() * 100 + 'vw';
             confetti.style.top = '-5vh';
             confetti.style.width = Math.random() * 8 + 5 + 'px';
             confetti.style.height = Math.random() * 8 + 5 + 'px';
-            
-            // Rastgele düşme hızı
             confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
-            
             document.body.appendChild(confetti);
-            
-            // Ekran dışına çıkınca sil
-            setTimeout(() => {
-                confetti.remove();
-            }, 5000);
+            setTimeout(() => { confetti.remove(); }, 5000);
         }
 
-        // Sürpriz Buton Tetikleyicisi
         function triggerSurprise() {
-            // Hızlıca 50 tane konfeti patlat
             for(let i=0; i<60; i++){
                 setTimeout(createConfetti, i * 20);
             }
-            alert("✨ Ecrin! Yeni yaşın sana tüm güzellikleri bir arada getirsin! İyi ki varsın! 🎉");
+            alert("✨ Ecrin! Doğum günün şimdiden kutlu olsun! İyi ki varsın! 🎉");
         }
 
-        // Şifre kutusunda Enter tuşuna basınca giriş yapma
         document.getElementById('password-input').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                checkPassword();
-            }
+            if (e.key === 'Enter') { checkPassword(); }
         });
     </script>
 </body>
